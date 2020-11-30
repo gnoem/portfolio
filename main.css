@@ -211,8 +211,8 @@ h2 {
 }
 
 .bubbles button:hover i {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.1) translate3d(-50%, -50%, 0);
+          transform: scale(1.1) translate3d(-50%, -50%, 0);
   text-shadow: 0px 0px 0.5rem #D2FFF8;
 }
 
