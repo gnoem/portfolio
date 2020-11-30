@@ -185,21 +185,22 @@ h2 {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 999px;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  place-items: center;
+  display: inline-block;
   font-size: 1.3rem;
   cursor: pointer;
   outline: none;
   color: #D2FFF8;
   -webkit-box-shadow: 2px 2px 0px #9BFFD1, 4px 4px 0px #EFDFFF;
           box-shadow: 2px 2px 0px #9BFFD1, 4px 4px 0px #EFDFFF;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  position: relative;
 }
 
 .bubbles button i {
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
   margin-top: 1px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

@@ -117,16 +117,18 @@ h2 {
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 999px;
-        display: inline-grid;
-        place-items: center;
+        display: inline-block;
         font-size: 1.3rem;
         cursor: pointer;
         outline: none;
         color: #D2FFF8;
         box-shadow: 2px 2px 0px #9BFFD1, 4px 4px 0px #EFDFFF;
-        transition: 0.2s;
+        position: relative;
         i {
-            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
             margin-top: 1px;
             transition: all 0.2s;
         }
