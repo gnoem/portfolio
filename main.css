@@ -283,106 +283,38 @@ h2 {
   z-index: 1;
 }
 
+#hero #dist {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 130%;
+  height: auto;
+  background: url("images/hero/far.svg") bottom left no-repeat;
+  opacity: 0.2;
+}
+
 #hero #bg {
   position: fixed;
-}
-
-@media (max-width: 599px) {
-  #hero #bg {
-    background-image: url("images/bgcompressed_tzdmxo/bgcompressed_tzdmxo_c_scale,w_650.png");
-  }
-}
-
-@media (min-width: 600px) {
-  #hero #bg {
-    background-image: url("images/bgcompressed_tzdmxo/bgcompressed_tzdmxo_c_scale,w_931.png");
-  }
-}
-
-@media (min-width: 900px) {
-  #hero #bg {
-    background-image: url("images/bgcompressed_tzdmxo/bgcompressed_tzdmxo_c_scale,w_1241.png");
-  }
-}
-
-@media (min-width: 1200px) {
-  #hero #bg {
-    background-image: url("images/bgcompressed_tzdmxo/bgcompressed_tzdmxo_c_scale,w_1400.png");
-  }
-}
-
-@media (min-width: 1800px) {
-  #hero #bg {
-    background-image: url("images/bgcompressed_tzdmxo/bgcompressed.png");
-  }
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
 }
 
 #hero #mid {
   position: fixed;
-}
-
-@media (max-width: 599px) {
-  #hero #mid {
-    background-image: url("images/midcompressed_julg6n/midcompressed_julg6n_c_scale,w_712.png");
-  }
-}
-
-@media (min-width: 600px) {
-  #hero #mid {
-    background-image: url("images/midcompressed_julg6n/midcompressed_julg6n_c_scale,w_971.png");
-  }
-}
-
-@media (min-width: 900px) {
-  #hero #mid {
-    background-image: url("images/midcompressed_julg6n/midcompressed_julg6n_c_scale,w_1199.png");
-  }
-}
-
-@media (min-width: 1200px) {
-  #hero #mid {
-    background-image: url("images/midcompressed_julg6n/midcompressed_julg6n_c_scale,w_1400.png");
-  }
-}
-
-@media (min-width: 1800px) {
-  #hero #mid {
-    background-image: url("images/midcompressed_julg6n/midcompressed.png");
-  }
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
 }
 
 #hero #fg {
   position: absolute;
-}
-
-@media (max-width: 599px) {
-  #hero #fg {
-    background-image: url("images/fgcompressed_gdjkzr/fgcompressed_gdjkzr_c_scale,w_640.png");
-  }
-}
-
-@media (min-width: 600px) {
-  #hero #fg {
-    background-image: url("images/fgcompressed_gdjkzr/fgcompressed_gdjkzr_c_scale,w_962.png");
-  }
-}
-
-@media (min-width: 900px) {
-  #hero #fg {
-    background-image: url("images/fgcompressed_gdjkzr/fgcompressed_gdjkzr_c_scale,w_1238.png");
-  }
-}
-
-@media (min-width: 1200px) {
-  #hero #fg {
-    background-image: url("images/fgcompressed_gdjkzr/fgcompressed_gdjkzr_c_scale,w_1400.png");
-  }
-}
-
-@media (min-width: 1800px) {
-  #hero #fg {
-    background-image: url("images/fgcompressed_gdjkzr/fgcompressed.png");
-  }
+  bottom: -1px;
+  right: 0;
+  width: 100%;
+  height: auto;
 }
 
 #hero #dim {
@@ -392,18 +324,9 @@ h2 {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #c2fef4 64%, #c2fef4 100%);
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  position: absolute;
-}
-
-#hero > div {
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  position: absolute;
 }
 
 #hi-c {
@@ -520,6 +443,7 @@ h2 {
   }
   #hi-c #hi h1 {
     font-size: 12vw;
+    text-shadow: 1.5px 1.5px 0px #9BFFD1, 3px 3px 0px #EFDFFF;
     letter-spacing: -0.1rem;
   }
   #hi-c #hi p {
@@ -1111,7 +1035,7 @@ h2 {
     opacity: 1;
   }
   #contact.section .footer {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -1202,6 +1126,9 @@ h2 {
   #projects.section .project .notes h2, #projects.section .project .notes .services_given, #projects.section .project .notes .tags {
     width: 100%;
   }
+  #contact.section {
+    padding-bottom: 60vw;
+  }
   #contact.section h1 {
     text-shadow: 0.1rem 0.1rem 0px #BCAEF3, 0 0 5rem #D0C4FF;
   }
@@ -1209,10 +1136,15 @@ h2 {
     font-size: 1.5rem;
   }
   #contact.section .contact p {
-    width: 70%;
+    width: 100%;
   }
   #contact.section .gradient {
-    background: radial-gradient(ellipse farthest-side at 50% 50%, rgba(209, 197, 255, 0.85) 70%, rgba(209, 197, 255, 0.4) 85%, rgba(255, 255, 255, 0) 100%);
+    height: 60%;
+    bottom: 20%;
+    background: radial-gradient(ellipse farthest-side at 50% 50%, rgba(209, 197, 255, 0.5) 70%, rgba(209, 197, 255, 0.4) 85%, rgba(255, 255, 255, 0) 100%);
+  }
+  #footer span {
+    font-size: 3.5vw;
   }
 }
 
