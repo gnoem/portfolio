@@ -23,7 +23,7 @@
         <meta name="twitter:image:alt" content="naomi g.w. • web developer">
 
         <link rel="stylesheet" href="main.css" media="all">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" media="all">
 
         <!-- FAVICON -->
         <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
@@ -50,9 +50,9 @@
                 <h1 class="big">Hi, I'm Naomi!</h1>
                 <p>I'm a full-stack web developer with over 10 years of experience building beautiful, interactive websites.</p>
                 <div class="bubbles">
-                    <button onclick="window.location.href = 'https://github.com/gnoem'"><i class="fab fa-github"></i></button>
-                    <button onclick="window.location.href = 'https://codepen.io/gnomey'"><i class="fab fa-codepen"></i></button>
-                    <button onclick="window.location.href = 'mailto:contact@ngw.dev'"><i class="fas fa-envelope"></i></button>
+                    <button aria-label="Visit Github profile" onclick="window.location.href = 'https://github.com/gnoem'"><i class="fab fa-github"></i></button>
+                    <button aria-label="Visit Codepen profile" onclick="window.location.href = 'https://codepen.io/gnomey'"><i class="fab fa-codepen"></i></button>
+                    <button aria-label="Email me" onclick="window.location.href = 'mailto:contact@ngw.dev'"><i class="fas fa-envelope"></i></button>
                 </div>
             </div>
         </div>
@@ -87,7 +87,8 @@
             </div>
             <img class="wavy"
                 src="images/wavyb.svg"
-                alt="blue page divider">
+                alt="blue page divider"
+                style="margin-bottom: -2px;">
             <div class="section" id="skills">
                 <h1>Skills</h1>
                 <div class="skills">
